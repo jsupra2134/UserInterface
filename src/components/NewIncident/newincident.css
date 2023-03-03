@@ -1,0 +1,80 @@
+h1 {
+    border-bottom: 1px solid white;
+    color: #3d3d3d !important;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px;
+    text-align: center;
+  }
+  .EnterIncidentcontent div,
+  .EnterNewIncident2 form {
+    color: #3d3d3d;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+.EnterIncidentcontent {
+    background: white;
+    border: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 30px 50px;
+  }
+.EnterIncidentcontent p,
+.EnterNewIncident2 p {
+    color: #3d3d3d;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.EnterNewIncident2 button {
+  background: #d6d934;
+  background-image: -webkit-linear-gradient(top, #d6d934, #2b1bbf);
+  background-image: -moz-linear-gradient(top, #d6d934, #2b1bbf);
+  background-image: -ms-linear-gradient(top, #d6d934, #2b1bbf);
+  background-image: -o-linear-gradient(top, #d6d934, #2b1bbf);
+  background-image: linear-gradient(to bottom, #d6d934, #2b1bbf);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 28px;
+  font-family: Arial;
+  margin: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.EnterNewIncident2 button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.EnterIncidentTitle {
+    display: table-column;
+    flex-direction: column;
+}
+
+.EnterNewIncident2 input,
+.EnterIncidentName input{
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}

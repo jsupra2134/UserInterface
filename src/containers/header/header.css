@@ -1,0 +1,92 @@
+.header{
+    display: flex;
+}
+
+.header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+
+h1.GraphHeader{
+    color: white !important;
+}
+
+
+.header-content__input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+/* This is the format of the input*/
+.header-content__input input{
+    flex: 5;
+    width: 150%;
+    min-height: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    background: white;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: rgb(20, 19, 19);
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+h1 {
+
+    color: black;
+}
+/* This is the format for the button*/
+.header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.dataResult {
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(199, 184, 184, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+.dataResult::-webkit-scrollbar {
+    display: none;
+}
+
+.dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+  
+.dataItem p {
+    margin-left: 10px;
+}
+
