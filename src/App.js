@@ -5,7 +5,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {UserData} from './containers/graphs/graphdata';
  import './App.css';
- import IncidentData from "./Data.json";
 
 
 
@@ -28,7 +27,7 @@ import {UserData} from './containers/graphs/graphdata';
 
       </nav>
       <Routes>
-        <Route path="header" element={<Header placeholder="Search Incident" data = {IncidentData}/>}></Route>
+        <Route path="header" element={<Header placeholder="Search Incident" />}></Route>
         <Route path="NewIncident" element={<NewIncident/>}></Route>
         <Route path="Graphs" element={<Graphs chartData={UserData}/>}></Route>
       </Routes>

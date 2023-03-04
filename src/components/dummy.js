@@ -67,7 +67,7 @@ export const lineCustomSeries = [
   };
   
   export const LinePrimaryYAxis = {
-    labelFormat: '{value}%',
+    labelFormat: '{value}',
     rangePadding: 'None',
     minimum: 0,
     maximum: 100,
