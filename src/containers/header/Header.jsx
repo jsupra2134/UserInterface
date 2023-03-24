@@ -2,31 +2,36 @@ import React, { useState } from "react";
 import "./header.css";
 import {LineChart} from "../../components"
 import {BarChart} from "../../components"
-import ChartsHeader from "../../components/Charts/ChartsHeader";
 
 const Header = ({placeholder}) => {
-  /*const [filteredData, setFilteredData] = useState([]);
-  const [wordEntered, setWordEntered] = useState("");
+  const [search, setSearch] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleFilter = (event) => {
-    const searchWord = event.target.value;
-    setWordEntered(searchWord);
-    const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+  let handleSubmit = async (e) => {
+    e.preventDefault();
+    try{
+    let res = await fetch("http://127.0.0.1:8000/rest/updatestr/", {
+      method: "PUT",
+      body: JSON.stringify({
+        "search": search,
+      }
+      )
     });
 
-    if (searchWord === "") {
-      setFilteredData([]);
-    } else {
-      setFilteredData(newFilter);
-    }
-  };
 
-  const clearInput = () => {
-    setFilteredData([]);
-    setWordEntered("");
+
+    if(res.status === 200){
+      setSearch("");
+      setMessage("Successfully Submitted")
+    } else{
+      setMessage("Some Error Occurred");
+    }
+  } catch (err){
+    console.log(err);
+  }
+  // Validation
+  console.log(search);
   };
-  */
   return (
     <div className="header section" > 
     <div classname = "header-content__new">
